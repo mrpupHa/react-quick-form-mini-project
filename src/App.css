@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +47,60 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.btn-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: #7c3aed; /* ม่วง */
+  color: #ffffff;
+
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #6d28d9;
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+.btn-refresh {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: #ffffff;
+  color: #374151;
+
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-refresh:hover {
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+}
+
+.btn-refresh:focus {
+  outline: none;
+  border: 1px solid #d1d5db;
 }
