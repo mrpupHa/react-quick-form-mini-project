@@ -1,8 +1,12 @@
-export function Button({ text, imgSrc, onClick, type = "button", className }) {
+export function Button(props) {
   return (
-    <button type={type} className={className} onClick={onClick}>
-      {imgSrc}
-      {text}
+    <button
+      type={props.type}
+      className={props.className}
+      onClick={props.onClick}
+    >
+      {props.imgSrc}
+      {props.text}
     </button>
   );
 }
